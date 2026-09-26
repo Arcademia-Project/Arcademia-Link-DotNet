@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Arcademia.Link</RootNamespace>
+    <AssemblyName>Arcademia.Link</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Arcademia.Link</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Arcademia</Authors>
+    <Description>Sign users in with their Arcademia account and read their personal achievements against every public Arcademia achievement. Handles the OAuth 2.0 authorization code flow with PKCE, the loopback redirect, token storage and refresh.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Arcademia-Project/Arcademia-Link-DotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Arcademia-Project/Arcademia-Link-DotNet</RepositoryUrl>
+    <PackageTags>arcademia;achievements;oauth;pkce;tracker;sign-in</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
